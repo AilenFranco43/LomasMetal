@@ -4,7 +4,7 @@
   --clear: #fbfbfb;
   --dark: #192126;
   --font-montserrat: "Montserrat", sans-serif;
-  --font-weight-light: 400;
+  --font-weight-light: 300;
   --font-size-base: 16px;
 }
 
@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 
   height: 100%;
-  font-family: sans-serif;
+  font-family: var(--font-montserrat);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

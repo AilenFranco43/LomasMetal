@@ -37,16 +37,15 @@ const HeaderContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 .5rem 0 .5rem;
-
-    Image{
-        z-index: 1000;
-    }
-
+   
 
 `;
 
 const LogoContainer = styled.div`
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `;
 
 const ContainerNav = styled.div`
@@ -55,15 +54,34 @@ background-color: var(--secondary);
   position: relative;
   height: 100%;
   right: -10px;
-  width: 100px;
+  width: 70px;
   background-size: cover;
-  /* clip-path: polygon(45% 0, 100% 0, 100% 100%, 0 100%); */
+
   display: flex;
   justify-content: end;
+  z-index: 400; 
+  clip-path: none;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -30px; 
+    width: 30px;
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
+
+    background-color: var(--secondary);
+ 
+    z-index: -1;
+  }
+
 
   @media (min-width: 768px) {
-    width: 450px;
-    clip-path: polygon(22% 0, 100% 0, 100% 100%, 0 100%);
+    width: 410px;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    z-index: auto;
   }
 
 
