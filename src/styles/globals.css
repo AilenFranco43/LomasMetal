@@ -1,0 +1,46 @@
+:root {
+  --main: #e64b35;
+  --secondary: #a21815;
+  --clear: #fbfbfb;
+  --dark: #192126;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-weight-light: 400;
+  --font-size-base: 16px;
+}
+
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-montserrat);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-base);
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
