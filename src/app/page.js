@@ -1,6 +1,6 @@
 
 export default function Home() {
   return (
-    <div>Hola mundo</div>
+    <div>Catalogo Lomas metal</div>
   );
 }
