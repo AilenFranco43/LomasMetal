@@ -48,10 +48,6 @@ function NavBar() {
   }, [isClient]);
 
 
-
-
-
-
   return (
     <>
       <NavContainer>

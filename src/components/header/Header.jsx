@@ -8,14 +8,14 @@ import Image from 'next/image';
 const Header = () => {
   return (
     <HeaderContainer>
-        <LogoContainer>
+        <ContainerLogoHeader>
            <Image 
         src="/img/logo/logoLomasMetal.png" 
         alt="Logo de Lomas Metal"
         width={65}
         height={65}
       />  
-        </LogoContainer>
+        </ContainerLogoHeader>
       
 
         <ContainerNav>
@@ -30,18 +30,20 @@ const Header = () => {
 export default Header;
 
 const HeaderContainer = styled.div`
-    background-color: var(--main);
-    background-repeat: no-repeat;
-    height: 80px;
+    position: fixed;
+    padding: 0 .5rem 0 .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 .5rem 0 .5rem;
-   
+    width: 100%;
+    height: 80px;
+    background-color: var(--main);
+    background-repeat: no-repeat;
+    z-index: 1000;
 
 `;
 
-const LogoContainer = styled.div`
+const ContainerLogoHeader = styled.div`
     z-index: 1000;
     display: flex;
     flex-direction: column;
@@ -73,7 +75,6 @@ background-color: var(--secondary);
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
 
     background-color: var(--secondary);
- 
     z-index: -1;
   }
 

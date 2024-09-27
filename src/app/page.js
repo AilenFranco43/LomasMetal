@@ -3,7 +3,7 @@ import { SectionHome} from '../components/homeSection/SectionHome.jsx'
 
 export default function Home() {
   return (
-    <div>Hola mundo
+    <div>
 
 
       <SectionHome/>
