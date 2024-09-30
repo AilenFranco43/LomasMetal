@@ -1,0 +1,17 @@
+.containerCategoriesNav{
+    background:none;
+}
+
+@media (min-width: 768px) {
+    .containerCategoriesNav{
+
+        width: 250px;
+        background: var(--dark);
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}

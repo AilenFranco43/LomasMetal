@@ -42,6 +42,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+ul, ol {
+  list-style: none; /* Elimina los bullets (puntos) en listas no ordenadas y números en listas ordenadas */
+  padding: 0;       /* Elimina el padding */
+  margin: 0;        /* Elimina el margen */
+}
 /* Reset básico para todos los títulos */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
