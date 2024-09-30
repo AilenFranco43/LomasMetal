@@ -8,6 +8,15 @@
   --font-size-base: 16px;
 }
 
+::-webkit-scrollbar{
+  width: 8px;
+  background-color: var(--clear);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background-color: #a21815;
+}
+
 
 html,
 body {
