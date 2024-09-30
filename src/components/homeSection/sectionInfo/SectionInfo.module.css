@@ -1,0 +1,115 @@
+/* Estilos base (Mobile First) */
+.sectionInfo {
+    padding: 5px;
+    background-color: var(--dark);
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    gap: 10px; 
+    height: 300px; 
+}
+
+.containerImg {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 10px;
+}
+
+
+.containerImg:nth-child(2) {
+    z-index: 2; 
+    position: relative;
+}
+.containerImg:nth-child(2) .imgDescription{
+    font-size: .9rem;
+    width: 250px;
+}
+
+.imgDescription {
+    width: 200px;
+    color: var(--clear);
+    text-align: center;
+    font-size: .7rem;
+    margin: 5px;
+
+}
+
+/* Estilos adicionales para el efecto triángulo en mobile */
+@media (max-width: 768px) {
+    .sectionInfo {
+        height: 300px; /* Aumentar la altura para acomodar los elementos */
+        position: relative; /* Para posicionar los otros elementos de manera absoluta */
+    }
+
+    /* Efecto triángulo */
+    .containerImg:nth-child(2) {
+        align-self: center;
+        margin-bottom: 20px; /* Separación entre el div del medio y los otros dos */
+        position: relative;
+        top: 0;
+        
+    }
+
+    .containerImg:nth-child(1),
+    .containerImg:nth-child(3) {
+        position: absolute; /* Posicionar a los dos divs de los lados */
+        top: 140px; /* Ambos en la misma altura */
+    }
+
+    .containerImg:nth-child(1) {
+        left: 12%; /* Posicionar a la izquierda */
+    }
+
+    .containerImg:nth-child(3) {
+        right: 14%; /* Posicionar a la derecha */
+    }
+}
+
+@media (min-width: 768px) {
+    .sectionInfo {
+        height: fit-content;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 0;
+        padding: 0px 30px;
+    }
+
+    .containerImg {
+        width: 8%;
+  
+    }
+
+    .containerImg:nth-child(2) {
+        order: 0;
+        position: static;
+    }
+    
+    .imgDescription {
+        width: 350px;
+        font-size: 1rem;
+    }
+    .containerImg:nth-child(2) .imgDescription{
+        font-size: 1.2rem;
+        width: 300px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .imgDescription{
+        font-size: 1.2rem;
+    }
+    .containerImg:nth-child(2) .imgDescription{
+        font-size: 1.4rem;
+        width: 350px;
+    }
+
+}

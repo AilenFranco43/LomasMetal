@@ -1,0 +1,124 @@
+/* Estilos base (Mobile First) */
+.containerSectionHome {
+  height: 100vh;
+  background-image: url('/img/backgrounds/bg-home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 90px;
+  background-color: rgba(251, 251, 251, 0.2); /* Fondo blanco con opacidad */
+  z-index: 0;
+}
+
+.containerPresentation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el logo */
+.containerLogoHome {
+  top: 50px; /* Menor margen superior en móviles */
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.containerLogoHome img {
+  width: 250px; /* Ajustar tamaño del logo para móviles */
+  height: auto;
+}
+
+/* Estilos para el marquee */
+.marquee {
+  width: 300%; /* Menor tamaño en móviles */
+  height: 60px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.marquee__content {
+  display: flex;
+  animation: scrolling 20s linear infinite; /* Animación más rápida en móviles */
+}
+
+.marquee__item {
+  color: var(--clear);
+  font-size: 1.5rem; /* Tamaño de fuente más pequeño en móviles */
+  font-weight: 400;
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding-right: 50px;
+  text-shadow: -2px -2px 0 rgba(25, 33, 38, 0.5),
+                2px -2px 0 rgba(25, 33, 38, 0.5),
+                -2px 2px 0 rgba(25, 33, 38, 0.5),
+                2px 2px 0 rgba(25, 33, 38, 0.5);
+}
+
+.containerSectionInfo{
+  position: absolute;
+  width: 100%;
+
+  bottom:0;
+}
+
+/* Media Queries para pantallas más grandes (Tabletas y Escritorio) */
+@media (min-width: 768px) {
+  .containerSectionHome {
+    flex-direction: column;
+  }
+
+  .containerLogoHome img {
+    width: 250px; /* Aumenta el tamaño del logo en pantallas más grandes */
+  }
+
+  .marquee {
+    width: 400%; /* Aumenta el tamaño del marquee en pantallas más grandes */
+    height: 90px;
+  }
+
+  .marquee__content {
+    animation: scrolling 30s linear infinite;
+  }
+
+  .marquee__item {
+    font-size: 2rem; /* Tamaño de fuente mayor en pantallas grandes */
+    padding-right: 100px;
+  }
+}
+
+/* Media Queries para pantallas aún más grandes (Desktop grande) */
+@media (min-width: 1200px) {
+  .containerLogoHome img {
+    width: 250px; /* Tamaño mayor del logo en pantallas grandes */
+  }
+
+  .marquee__item {
+    font-size: 2.5rem; /* Mayor tamaño de fuente en pantallas muy grandes */
+  }
+}
+
+/* Animación del marquee */
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
