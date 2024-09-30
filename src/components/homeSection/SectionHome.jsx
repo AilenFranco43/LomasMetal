@@ -16,7 +16,6 @@ export const SectionHome = () => {
           alt="Logo de Lomas Metal"
           width={300}
           height={300}
-          // className={styles.logoResponsive}
         />
       </div>
 
