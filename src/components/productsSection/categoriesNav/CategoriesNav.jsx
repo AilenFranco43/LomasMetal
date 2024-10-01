@@ -14,10 +14,10 @@ const CategoriesNav = () => {
             <button className={styles.categoryLink}>Productos de piscinas</button>
         </li>
         <li className={styles.categoryItem}>
-            <button className={styles.categoryLink}>Productos de invernadero</button>
+            <button className={styles.categoryLink}>Nylon de invernadero</button>
         </li>
         <li className={styles.categoryItem}>
-            <button className={styles.categoryLink}>Productos de mediasombras</button>
+            <button className={styles.categoryLink}>Mediasombras</button>
         </li>
         <li className={styles.categoryItem}>
             <button className={styles.categoryLink}>Telas no tejidas</button>
@@ -27,6 +27,9 @@ const CategoriesNav = () => {
         </li>
         <li className={styles.categoryItem}>
             <button className={styles.categoryLink}>Artículos de ferretería</button>
+        </li>
+        <li className={styles.categoryItem}>
+            <button className={styles.categoryLink}>Cubre cercos</button>
         </li>
     </ul>
 </nav>
