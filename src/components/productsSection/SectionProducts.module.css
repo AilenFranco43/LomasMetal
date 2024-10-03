@@ -1,17 +1,60 @@
-.containerCategoriesNav{
-    background:none;
+/* Estilos base (para móviles) */
+.containerProducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+}
+.containerProductsTitle{
+    background: var(--dark);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+
+}
+.productsTitle{
+    color: var(--clear);
 }
 
-@media (min-width: 768px) {
-    .containerCategoriesNav{
+.containerCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    min-height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex: 0 1 calc(45% - 10px); /* Cada card ocupará el 50% del ancho menos un pequeño margen */
+    margin: 5px; /* Ajusta el margen entre las cards */
+}
 
+.containerCategoriesNav{
+    background: none;
+}
+
+
+
+@media (min-width:768px) {
+    .sectionProducts{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .containerCategoriesNav{
         width: 250px;
-        background: var(--dark);
-        height: max-content;
+        background-color: var(--dark);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         
     }
+    .containerProducts{
+        width:80vw;
+    
+    }
+    
 }

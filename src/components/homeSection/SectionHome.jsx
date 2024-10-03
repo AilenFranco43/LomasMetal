@@ -4,7 +4,7 @@ import styles from './SectionHome.module.css'; // Importa el archivo CSS module
 import ImageLogo from 'next/image';
 import SectionInfo from './sectionInfo/SectionInfo';
 
-export const SectionHome = () => {
+const SectionHome = () => {
   return (
     <section className={styles.containerSectionHome} id='inicio'>
     <div className={styles.overlay}>
@@ -48,3 +48,6 @@ export const SectionHome = () => {
     </section>
   );
 };
+
+
+export default SectionHome;

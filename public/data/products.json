@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "TELAS PLÁSTICAS",
+    "category": "Todos los productos"
+  },
+  {
+    "id": 2,
+    "name": "HERRAMIENTAS",
+    "category": "Articulos de ferreteria"
+  },
+  {
+    "id": 3,
+    "name": "TINTAS",
+    "category": "Colorantes"
+  }
+]

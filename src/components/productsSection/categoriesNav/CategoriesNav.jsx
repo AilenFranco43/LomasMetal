@@ -1,41 +1,39 @@
-"use client"
+
+"use client";
 import React from 'react';
 import styles from './CategoriesNav.module.css';
 
+const CategoriesNav = ({ onSelectCategory, selectedCategory  }) => {
+  const categories = [
+    { name: 'Todos los productos', value: 'all' },
+    { name: 'Productos de piscinas', value: 'piscinas' },
+    { name: 'Nylon de invernadero', value: 'nylon' },
+    { name: 'Mediasombras', value: 'mediasombras' },
+    { name: 'Telas no tejidas', value: 'no-tejidas' },
+    { name: 'Goma espuma', value: 'goma-espuma' },
+    { name: 'Artículos de ferretería', value: 'ferreteria' },
+    { name: 'Cubre cercos', value: 'cubre-cercos' },
+  ];
 
-const CategoriesNav = () => {
   return (
-<nav className={styles.categoriesNav}>
-    <ul className={styles.categoriesList}>
-        <li className={styles.categoryItem}>
-            <button className={styles.categoryLink}>Todos los productos</button>
-        </li>
-        <li className={styles.categoryItem}>
-            <button className={styles.categoryLink}>Productos de piscinas</button>
-        </li>
-        <li className={styles.categoryItem}>
-            <button className={styles.categoryLink}>Nylon de invernadero</button>
-        </li>
-        <li className={styles.categoryItem}>
-            <button className={styles.categoryLink}>Mediasombras</button>
-        </li>
-        <li className={styles.categoryItem}>
-            <button className={styles.categoryLink}>Telas no tejidas</button>
-        </li>
-        <li className={styles.categoryItem}>
-            <button className={styles.categoryLink}>Goma espuma</button>
-        </li>
-        <li className={styles.categoryItem}>
-            <button className={styles.categoryLink}>Artículos de ferretería</button>
-        </li>
-        <li className={styles.categoryItem}>
-            <button className={styles.categoryLink}>Cubre cercos</button>
-        </li>
-    </ul>
-</nav>
-
-
+    <nav className={styles.categoriesNav}>
+      <ul className={styles.categoriesList}>
+        {categories.map(category => (
+          <li className={styles.categoryItem} key={category.value}>
+            <button
+              className={`${styles.categoryLink} ${selectedCategory === category.value ? styles.active : ''}`} // Aplicar clase si está seleccionada
+              onClick={() => onSelectCategory(category.value)}
+            >
+              {category.name}
+            </button>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };
 
 export default CategoriesNav;
+
+
+
