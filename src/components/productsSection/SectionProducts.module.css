@@ -1,4 +1,17 @@
 /* Estilos base (para móviles) */
+.sectionTitle{
+    text-align: center;
+    width: 100%;
+    background: var(--main);
+    margin: 10px 0 5px 0;
+    padding: 10px 0;
+    color: var(--clear);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.containerCategoriesNav{
+    text-align: center;
+}
 .containerProducts{
     display: flex;
     flex-direction: column;
@@ -8,14 +21,14 @@
 
 }
 .containerProductsTitle{
-    background: var(--dark);
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
 
 }
 .productsTitle{
-    color: var(--clear);
+    color: var(--dark);
+    font-size: 1.2rem;
 }
 
 .containerCards{
@@ -23,12 +36,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     min-height: 80vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    flex: 0 1 calc(45% - 10px); /* Cada card ocupará el 50% del ancho menos un pequeño margen */
-    margin: 5px; /* Ajusta el margen entre las cards */
+    /* flex: 0 1 calc(50% - 5px);  */
+    margin: 0; /* Ajusta el margen entre las cards */
+    padding: 0 5px;
 }
 
 .containerCategoriesNav{
@@ -36,9 +50,15 @@
 }
 
 
-
 @media (min-width:768px) {
     .sectionProducts{
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionTitle{
+        margin-bottom: 0;
+    }
+    .containerSectionProducts{
         display: flex;
         flex-direction: row;
 
@@ -50,11 +70,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: var(--clear);
         
     }
     .containerProducts{
         width:80vw;
     
+    }
+    .containerCards{
+        justify-content: center;
     }
     
 }

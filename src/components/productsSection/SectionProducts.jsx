@@ -56,18 +56,23 @@ const SectionProducts = () => {
 
   return (
     <section id='catalogo' className={styles.sectionProducts}>
+      <h2 className={styles.sectionTitle}>Catalogo</h2>
+      <div className={styles.containerSectionProducts}>
+
+
       <div className={styles.containerCategoriesNav}>
+        <p>Filtrar por categoría:</p>
         <CategoriesNav
-          onSelectCategory={handleSelectCategory} 
-          selectedCategory={selectedCategory} // Pasar la categoría seleccionada
+        onSelectCategory={handleSelectCategory} 
+         selectedCategory={selectedCategory} // Pasar la categoría seleccionada
         />
       </div>
       <div className={styles.containerProducts}>
 
         <div className={styles.containerProductsTitle}>
-          <h2 className={styles.productsTitle}>
+          <h3 className={styles.productsTitle}>
           {categoryNames[selectedCategory]}
-          </h2>
+          </h3>
         </div>
         <div className={styles.containerCards}>
           {filteredProducts.length > 0 ? (
@@ -78,6 +83,8 @@ const SectionProducts = () => {
             <p>No hay productos disponibles en esta categoría.</p>
           )}
         </div>
+
+      </div>
 
       </div>
     </section>
