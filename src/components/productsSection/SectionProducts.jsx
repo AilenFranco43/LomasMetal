@@ -7,7 +7,7 @@ import styles from './SectionProducts.module.css';
 const SectionProducts = () => {
   // Definir productos directamente en el componente
   const products = [
-    { id: 1, name: 'Producto 1', category: 'piscinas', price: 100 },
+    { id: 1, name: 'Nylon agrario', category: 'nylon', image: '/img/products/producto1.jpeg' , description: 'Nylon agrario negro ,especial para obra, se usa para hormigón,tapar inmuebles , viene en 2 3 4 6 y 8 metros de ancho en 100’y 200 micrones'},
     { id: 2, name: 'Producto 2', category: 'nylon', price: 200 },
     { id: 3, name: 'Producto 3', category: 'mediasombras', price: 300 },
     { id: 4, name: 'Producto 4', category: 'ferreteria', price: 400 },
