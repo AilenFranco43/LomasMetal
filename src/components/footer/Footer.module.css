@@ -1,29 +1,41 @@
 .footerContainer{
+    background: var(--secondary);
+    color: var(--clear);
+    
+    padding-top: 8px;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    background: var(--secondary);
     justify-content: center;
     align-items: center;
-    color: var(--clear);
-    font-size: .8rem;
+    gap: 10px;
 
 }
+.containerSections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.footerSection.sectionLinks{
+    display: none;
+}
+
 .footerSection{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 5px;
 }
-.footerSection:nth-child(1){
-    display: none;
-}
+
 
 .footerSection::after {
     content: "";
     display: block;
-    width: 40vw;
+    width: 60vw;
     height: .2px;
     background-color: var(--clear); 
     position: absolute;
@@ -34,31 +46,51 @@
     display: none;
   }
 
-.footerTitle{
-    font-weight: bold;
+.sectionTitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+.contactInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 
 }
 .iconDescription{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-.containerSocialM{
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2px 0;
 
 }
 .icon{
-    width: 20px;
-    height: auto;
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
 }
+.iconDescription p{
+    max-width: 310px;
+
+    text-align: center;
+}
+
+
 .socialIcon{
     background: none;
-    width: 25px;
+    width: 30px;
     height: auto;
     padding: 4px;
     border: solid 1.5px;
     border-radius: 50%;
+    margin: 5px 7px;
+}
+
+.footerNose{
+    display: flex;
+    flex-direction: column;
 }
 
 .footerCopyright{
@@ -66,3 +98,79 @@
 
 }
 
+
+.contactoVisitanos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 1000px){
+
+
+    .containerSections{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .footerSection.sectionLinks{
+        display: flex;
+        line-height: 2rem;
+    }
+
+
+    .footerSection::after{
+        display: none;
+    }
+   
+
+  
+    .contactInfo{
+        flex-direction: column;
+        gap: 5px;
+    
+    }
+    .contactoVisitanos{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width:700px;
+        flex-grow: 2;
+        position: relative;
+    }
+
+
+    .contactoVisitanos::before,
+    .contactoVisitanos::after {
+        content: "";
+        position: absolute;
+        top: 50%; /* Posicionar en el medio */
+        transform: translateY(-50%); /* Ajustar hacia arriba la mitad de la altura de la línea */
+        width: 1px; /* Ajustar según sea necesario */
+        height: 80%;
+        background-color: var(--clear);
+    }
+
+    .contactoVisitanos::before {
+        left: -10px; /* Ajustar la posición izquierda según sea necesario */
+       
+    }
+
+    .contactoVisitanos::after {
+        right: -10px; /* Ajustar la posición derecha según sea necesario */
+       
+    }
+
+
+    .containerUbication p{
+        width: 310px;
+    }
+    .sectionLinks,
+    .sectionHorarios{
+        width: 300px;
+    }
+    
+}
