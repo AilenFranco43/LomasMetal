@@ -44,6 +44,14 @@
     margin: 0; /* Ajusta el margen entre las cards */
     padding: 0 5px;
 }
+.containerCards::-webkit-scrollbar{
+    width: 6px;
+    background-color: var(--clear);
+  }
+  .containerCards::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #a21815;
+  }
 
 .containerCategoriesNav{
     background: none;
