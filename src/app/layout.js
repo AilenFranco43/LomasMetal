@@ -1,6 +1,8 @@
 import '../styles/globals.css';
 import Header from '../components/header/Header.jsx';
 import Footer from '../components/footer/Footer.jsx';
+import WhatsappBtn from '../components/whatsappBtn/WhatsappBtn.jsx';
+
 
 
 export const metadata = {
@@ -39,6 +41,7 @@ export default function RootLayout({ children }) {
 
       <body>
         <Header/>
+        <WhatsappBtn/>
         {children}
         <Footer/>
         </body>
