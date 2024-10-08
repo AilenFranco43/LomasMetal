@@ -1,35 +1,10 @@
 [
-    {
-      "name": "Todos los productos",
-      "value": "all"
-    },
-    {
-      "name": "Productos de piscinas",
-      "value": "piscinas"
-    },
-    {
-      "name": "Nylon de invernadero",
-      "value": "nylon"
-    },
-    {
-      "name": "Mediasombras",
-      "value": "mediasombras"
-    },
-    {
-      "name": "Telas no tejidas",
-      "value": "no-tejidas"
-    },
-    {
-      "name": "Goma espuma",
-      "value": "goma-espuma"
-    },
-    {
-      "name": "Artículos de ferretería",
-      "value": "ferreteria"
-    },
-    {
-      "name": "Cubre cercos",
-      "value": "cubre-cercos"
-    }
-  ]
-  
+  { "name": "Todos los productos", "value": "all" },
+  { "name": "Productos de piscinas", "value": "piscinas" },
+  { "name": "Nylon de invernadero", "value": "nylon" },
+  { "name": "Mediasombras", "value": "mediasombras" },
+  { "name": "Telas no tejidas", "value": "no-tejidas" },
+  { "name": "Goma espuma", "value": "goma-espuma" },
+  { "name": "Artículos de ferretería", "value": "ferreteria" },
+  { "name": "Cubre cercos", "value": "cubre-cercos" }
+]
